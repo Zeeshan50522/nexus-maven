@@ -7,7 +7,7 @@ pipeline {
     }
     stages {
         stage('Build approval'){
-          input "build to mvn?"
+          input "build project?"
        }
         stage("Build") {
             steps {
