@@ -3,7 +3,7 @@ def artifact_name = 'target/my-app-1.0.0.jar'
 pipeline {
     agent any
     tools {
-        maven "Maven"
+        maven "maven"
     }
     stages {
         stage("Build") {
