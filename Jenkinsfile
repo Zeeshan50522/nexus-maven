@@ -6,9 +6,7 @@ pipeline {
         maven "maven"
     }
     stages {
-        stage('Build approval'){
-          input "build project?"
-       }
+        
         stage("Build") {
             steps {
                 script {
