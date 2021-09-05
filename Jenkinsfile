@@ -6,6 +6,9 @@ pipeline {
         maven "maven"
     }
     stages {
+        stage('Build approval'){
+          input "build to mvn?"
+       }
         stage("Build") {
             steps {
                 script {
