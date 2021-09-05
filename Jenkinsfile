@@ -9,7 +9,7 @@ pipeline {
         stage("Build") {
             steps {
                 script {
-                    bat 'mvn clean package'
+                    'mvn clean package'
                 }
             }
         }
